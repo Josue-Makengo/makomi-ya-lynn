@@ -12,12 +12,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header" role="banner">
       <nav class="nav__container" role="navigation" aria-label="Navigation principale">
         <div class="nav__logo">Makomi ya Lynn</div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menubar">
+            <i class="fa-solid fa-bars" id="menu"></i>
+            <i class="fa-solid fa-xmark" id="close"></i>
+        </label> 
         <ul class="nav__list">
           <li><a class="nav__link" href="#">Accueil</a></li>
           <li><a class="nav__link" href="#presentation">Présentation</a></li>
@@ -35,28 +41,30 @@
       <p class="hero__quote">Un espace d'écoute, d’apaisement et de vérité.
         Parfois, on a juste besoin d’un endroit où déposer ce qu’on porte en silence
       </p>
-      <a href="#presentation" class="hero__cta">Découvrir Makomi ya Lynn</a>
+      <a href="#presentation" class="hero__cta">Découvrir Makomi ya Lynn
+        <span class="presentation__btn-icon">→</span>
+      </a>
     </section>
 
     <!-- Présentation -->
 
- <section class="presentation" id="presentation" aria-labelledby="presentation-title">
-  <div class="presentation__container">
-    <div class="presentation__content">
-      <div class="presentation__text-block">
-        <h2 class="presentation__title" id="presentation-title">Un espace d’écoute et de libération</h2>
-        <p class="presentation__text">
-          Makomi ya Lynn est un espace de réflexion, d’écoute et de partage destiné aux femmes.
-        C’est un lieu de soutien moral, émotionnel, et physique, où chaque parole compte
-        et chaque silence est entendu.
-        </p>
-      </div>
-      <div class="presentation__image-block" role="img" aria-label="Femme souriante et écoutée">
-        <img src="assets/presentation-2.jpg" alt="Une femme souriante écoutée avec bienveillance" class="presentation__image">
-      </div>
-    </div>
+  <section class="presentation" id="presentation" aria-labelledby="presentation-title">
+  <div class="presentation__background"></div>
+
+  <div class="presentation__content">
+    <h2 class="presentation__title" id="presentation-title">Makomi ya Lynn, une parole libérée</h2>
+    <p class="presentation__text">
+      Parce que chaque silence porte une histoire, Makomi ya Lynn accueille les femmes dans un espace
+      où la parole se libère sans jugement. Un lieu de sororité, d’apaisement et d’écoute profonde,
+      né d’un besoin vital d’être entendu.
+    </p>
+
+    <a href="a-propos.html" class="presentation__btn">
+      Voir plus <span class="presentation__btn-icon">→</span>
+    </a>
   </div>
 </section>
+
 
 
     <!-- Valeurs -->
@@ -289,9 +297,8 @@
       <p>Suivez-nous sur :</p>
       <div class="footer__list">
         <a href="#" class="footer__link">Facebook</a>
-        <a href="#" class="footer__link">Instagram</a>
-        <a href="mailto:contact@makomi-ya-lynn.org" class="footer__link">contact@makomi-ya-lynn.org</a>
-        <a href="/mentions-legales.html" class="footer__link">Mentions légales</a>
+        <a href="#" class="footer__link">WhatsApp</a>
+        <a href="mailto:contact@makomi-ya-lynn.org" class="footer__link">contact@makomi-ya-lynn.com</a>
       </div>
     </footer>
   </body>
